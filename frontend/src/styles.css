@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Main Theme Colours / Variables. These can be reused with var(--name) */
+:root {
+
+    /* ==== Dark Theme ==== */
+    --dark-bg: #001219;
+    --dark-panel: #94d2bd;    
+    --dark-highlight: #ee9b00;
+    --dark-text: #fdf0d5;
+    --dark-hover-text:#001219;
+    --dark-highlight-item: #94d2bd;
+
+    /* ==== Light Theme ==== */
+    --light-bg: #fdf0d5;
+    --light-panel:#0a9396;
+    --light-highlight: #ee9b00;
+    --light-text: #001219;
+    --light-hover-text:#fdf0d5;
+    --light-highlight-item: #005f73;
+
+    --button-colour: #ee9b00;
+    --error-colour: #ae2012;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#root, .app-shell {min-height: 100%;}
+
+*, .app-shell{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-text);
+    background: var(--light-bg);
+}
+
+.app-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.dark *, .app-shell.dark {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+
